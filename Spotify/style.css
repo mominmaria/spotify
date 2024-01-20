@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+    font-family: 'Varela Round', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   /* display: flex; */
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+   background-image: url('bg.webp');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0;
+    height: 130px;
+    background-color: rgb(7, 5, 48);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+      background-color: black;
+    }
+  }
+
+.songList{
+  margin: auto;
+  width: 69%;
+  padding: 10px;
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-heading {
+    display: inline-block;
+}
+
+.letter {
+    display: inline-block;
+    transform-origin: 50% 50%;
+    animation: bounce 0.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.word-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.word-animation span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    /* transform: translateX(-50px); */
+    animation: moveLetter 1s forwards;
+}
+
+@keyframes moveLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.word-animation span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.word-animation span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.word-animation span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.word-animation span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.word-animation span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.word-animation span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.word-animation span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.word-animation span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.word-animation span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+.word-animation span:nth-child(11) {
+    animation-delay: 1s;
+}
+
+.word-animation span:nth-child(12) {
+    animation-delay: 1.1s;
+}
+
+.word-animation span:nth-child(13) {
+    animation-delay: 1.2s;
+}
+
+.word-animation span:nth-child(14) {
+    animation-delay: 1.3s;
+}
+
+.word-animation span:nth-child(15) {
+    animation-delay: 1.4s;
+}
+
+.word-animation span:nth-child(16) {
+    animation-delay: 1.5s;
+}
+
+.word-animation span:nth-child(17) {
+    animation-delay: 1.6s;
+}
+
+.word-animation span:nth-child(18) {
+    animation-delay: 1.7s;
+}
+
+.word-animation {
+    font-size: 100px;
+}
+
+.section{
+    padding: 10px;
+    font-size: 25px;
+    /* border: 2px solid black; */
+    margin: auto;
+    border-radius: 10%;
+    background-color: #32a852;
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid rgb(29, 37, 80); */
+    
+}
+
+.section:hover{
+    color: black;
+}
+.sections{
+    /* border: 2px solid black; */
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.footer{
+    text-align: center;
+    margin-top: -10px;
+    font-size: 17px;
+    /* padding-bottom: 0px; */
+}
+
+.word-animation span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: moveLetter 1s forwards;
+}
+
+@keyframes moveLetter {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.word-animation span:nth-child(2), .word-animation span:nth-child(3), .word-animation span:nth-child(4), .word-animation span:nth-child(5), .word-animation span:nth-child(6), .word-animation span:nth-child(7), .word-animation span:nth-child(8), .word-animation span:nth-child(9), .word-animation span:nth-child(10), .word-animation span:nth-child(11), .word-animation span:nth-child(12), .word-animation span:nth-child(13), .word-animation span:nth-child(14), .word-animation span:nth-child(15), .word-animation span:nth-child(16), .word-animation span:nth-child(17), .word-animation span:nth-child(18) {
+    animation-delay: 0.1s;
+}
+
+.word-animation {
+    font-size: 100px;
+    animation: moveUpDown 3s infinite 2s alternate;
+}
+
+@keyframes moveUpDown {
+    to {
+        transform: translateY(-20px); /* Adjust the distance as needed */
+    }
+}
+
+.songItem1{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+
+.songItem1 img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
